@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi reina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: url('https://www.transparenttextures.com/patterns/hearts.png') repeat, #99ccff;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        p {
+            margin: 10px 0;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #ff4d94;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #e60073;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function loadImage() {
+            let imageContainer = document.getElementById('image-container');
+            let img = document.createElement('img');
+            img.src = 'imagen.jpg'; // Nombre de la imagen en la carpeta
+            img.alt = 'Imagen especial';
+            imageContainer.appendChild(img);
+        }
+        window.onload = loadImage;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Hola mi reina de todo mi corazón</h2>
+        <p>En este día tan especial</p>
+        <p>Me encantaría pedirte el favor</p>
+        <p>De querer ser la persona</p>
+        <p>Que me acompañe en este San Valentín</p>
+        <p>Mi deseo es que este sea</p>
+        <p>El primero de todos los demás que faltan</p>
+        <p>Y me encantaría saber</p>
+        <p>Si estás dispuesta a pasarlo conmigo??🥰🥰🥰</p>
+        <div class="image-container" id="image-container"></div>
+        <button class="yes" onclick="alert('Sabía que dirías que sí, mi amor! 💖')">Sí</button>
+        <button class="yes" onclick="alert('Eres la mejor, te amo! 💕')">Por supuesto que sí</button>
+    </div>
+</body>
+</html>
